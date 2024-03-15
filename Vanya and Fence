@@ -1,0 +1,16 @@
+#include "iostream"
+using namespace std ;
+int main(){
+    int numberOfFriends = 0 ,lengthOfFence = 0 ,minimumWidth=0,x=0;
+    cin>>numberOfFriends>>lengthOfFence ;
+    for (int i = 0; i < numberOfFriends; i++) {
+        cin>>x;
+        if(x<=lengthOfFence){
+            minimumWidth++;
+        }else{
+            minimumWidth+=2 ;
+        }
+    }
+    cout<<minimumWidth;
+    return  0 ;
+}
